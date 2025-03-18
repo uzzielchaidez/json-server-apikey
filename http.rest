@@ -1,0 +1,50 @@
+// Para usar, instalar extension RST Client de Huachao Mao
+
+GET http://localhost:3000/posts
+x-api-key: 123456
+
+###
+
+GET http://localhost:3000/comments
+x-api-key: 123456
+
+###
+
+GET http://localhost:3000/profile
+x-api-key: 123456
+
+###
+
+POST http://localhost:3000/posts
+content-type: application/json
+x-api-key: 123456
+
+{
+    "id": "101", 
+    "title": "Mi titulo 101", 
+    "views": 101 
+}
+
+
+###
+
+POST http://localhost:3000/comments
+content-type: application/json
+x-api-key: 123456
+
+{
+"id": "101",
+"text": "another comment about post 101",
+"postId": "1"
+}
+
+
+###
+
+POST http://localhost:3000/profile
+content-type: application/json
+x-api-key: 123456
+
+{
+  "name": "typicode"
+}
